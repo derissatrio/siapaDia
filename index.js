@@ -3,26 +3,28 @@ const instructur = [
   {
     nama: "Renhard", 
     img: "https://avatars.githubusercontent.com/u/9393561?v=4",
-    ciri: 'lorem ipsum lorem ipsum lorep'
+    ciri: 'namanya selalu muncul di repo github'
   }, 
   {
     nama: "Teddy", 
     img: "https://avatars.githubusercontent.com/u/23611745?v=4",
-    ciri: 'lorem ipsum lorem ipsum lorep'
+    ciri: 'saat ditanya oleh instruktur "apa ada tambahan ?" selalu menjawab "tidak ada kak"'
   }, 
   {
     nama: "Edison", 
     img: "https://avatars.githubusercontent.com/u/49446586?v=4",
-    ciri: 'lorem ipsum lorem ipsum lorep'
+    ciri: 'saat ngejelaskan soal suka muter-muter'
   }, 
 
   { 
     nama: "Ivan", 
     img: "https://avatars.githubusercontent.com/u/56533224?v=4",
-    ciri: 'lorem ipsum lorem ipsum lorep'
+    ciri: 'sering ngasih soal tambahan'
   }, 
-  // {nama: "Seven", img: ""}, 
-  // {nama: "Alam", img: ""}, {nama: "Iam", img: ""}, {nama: "Arnold", img: ""}
+  {nama: "Seven", img: "https://cdn.discordapp.com/attachments/921000959717556244/921212721343635556/kak7.jpg", ciri:'satu-satunya perempuan instruktur phase 0 batch 20'}, 
+  {nama: "Alam", img: "https://media.discordapp.net/attachments/912597474416398347/921203160192806953/unknown.png", ciri:'sinyal internet suka bermasalah'}, 
+  {nama: "Iam", img: "https://media.discordapp.net/attachments/912597474416398347/921202369541337129/unknown.png?width=661&height=670", ciri:'dulunya pernah kribo'}, 
+  {nama: "Arnold", img: "https://media.discordapp.net/attachments/912597474416398347/921201963281031240/unknown.png?width=656&height=670", ciri:'bisa ngilang'}
 ] 
 
 history = []
