@@ -28,7 +28,7 @@ const instructur = [
   {nama: "Iam", img: "https://media.discordapp.net/attachments/912597474416398347/921202369541337129/unknown.png?width=661&height=670", ciri:'dulunya pernah kribo'}, 
   {nama: "Arnold", img: "https://media.discordapp.net/attachments/912597474416398347/921201963281031240/unknown.png?width=656&height=670", ciri:'bisa ngilang'}
 ]
-
+let highscore = 0
 history = []
 let counter = 0
 let counterIndex = []
@@ -79,6 +79,13 @@ function final() {
 
   localStorage.setItem('history', JSON.stringify(history))
   document.getElementById('userName').value = ''
+  
+  if (score > highscore) {
+    highscore = score
+  }
+
+  document.getElementById('high').innerHTML = `<h4>High Score: ${highscore}</h4>`
+
 }
 
 
@@ -150,6 +157,7 @@ function bekasMain() {
     </div>
   </div>`
   } else {
+    table.innerHTML = ''
     for (let i = 0; i < history.length; i++) {
       table.innerHTML += `<tr>
       <th scope="row">${i + 1}</th>
@@ -188,6 +196,14 @@ function hapus(index) {
     <td>${dihapus[i].point}</td>
     <td><button type="button" id="${i}" onclick="hapus(id)" class="btn btn-danger badge">Delete</button></td>
   </tr>`
+  }
+
+  if (!dihapus.length) {
+    table.innerHTML = `<div class="row text-center">
+    <div class="col">
+      <h5 id="belumMain">Kamu belum pernah main</h5>
+    </div>
+  </div>`
   }
 }
 
