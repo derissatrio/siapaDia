@@ -21,8 +21,10 @@ const instructur = [
     img: "https://avatars.githubusercontent.com/u/56533224?v=4",
     ciri: 'lorem ipsum lorem ipsum lorep'
   }, 
-  // {nama: "Seven", img: ""}, 
-  // {nama: "Alam", img: ""}, {nama: "Iam", img: ""}, {nama: "Arnold", img: ""}
+  {nama: "Seven", img: "https://cdn.discordapp.com/attachments/921000959717556244/921212721343635556/kak7.jpg", ciri:'lorem ipsum lorem ipsum lorep'}, 
+  {nama: "Alam", img: "https://media.discordapp.net/attachments/912597474416398347/921203160192806953/unknown.png", ciri:'lorem ipsum lorem ipsum lorep'}, 
+  {nama: "Iam", img: "https://media.discordapp.net/attachments/912597474416398347/921202369541337129/unknown.png?width=661&height=670", ciri:'lorem ipsum lorem ipsum lorep'}, 
+  {nama: "Arnold", img: "https://media.discordapp.net/attachments/912597474416398347/921201963281031240/unknown.png?width=656&height=670", ciri:'lorem ipsum lorem ipsum lorep'}
 ] 
 
 history = []
