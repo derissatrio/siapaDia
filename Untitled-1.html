@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review HTML / DOM / CSS</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container text-center">
+      <div class="box-container">
+        <h1 class="title">SIAPA DIA ?</h1>
+        <p id="petunjuk">Anda ditantang untuk menebak siapa di balik gambar ini. Bisakah anda menebak "SIAPA DIA?" </h4>
+
+        <div class="answer-container center">
+          <form class= "nama-player">
+            <div>
+              <input
+                id="user-answer"
+                placeholder="Input Player Name"
+              ></input>
+            </div>
+            <div>
+              <button class="btn" id="mulai"><strong> MARI MULAI
+              </strong></button>
+            </div>
+          </form>
+          <img
+            id="image-yeay"
+            style="display: none"
+            src="https://media.tenor.com/images/785b6f101e34c86b0049406855eb9503/tenor.gif"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript logic here -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

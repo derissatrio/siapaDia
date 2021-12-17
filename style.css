@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-image: url("/New\ Project\ \(11\).png");
+  background-size: cover
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka One";
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* 
+Container
+*/
+.container {
+  max-width: 960px;
+  width: 100%;
+  box-shadow: 5pt;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.box-container {
+  background-color: #ebebebb8;
+  opacity: 50;
+  background-position: center;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 270px;
+  /* opacity: 0.8; */
+}
+
+#petunjuk{
+  font-family: "Calibri";
+  color: orangered;
+}
+
+#mulai {
+  background-color: #ff7b0fe8;
+
+}
+/* 
+Text Style
+*/
+.text-center {
+  text-align: center;
+}
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-kerning: initial;
+  font-size: 64pt;
+  margin-top: 20px;
+  color: #ff7b0fe8;
+  
+}
+.question {
+  margin: 20px 0;
+}
+.answer-container {
+  padding: 10px;
+  
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+} 
+
+.answer-container input {
+  display:flex;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* 
+Button Style
+*/
+.btn {
+  padding: 10px 15px;
+  margin: 15px 5px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
+}
+.other-btn {
+  background-color: #7585f4;
+  color: white;
+  margin-top: 0;
+}
+
+/* 
+Custom List
+*/
+.custom-list {
+  list-style-type: none;
+}
+.custom-list li:not(:last-child) {
+  border-bottom: 1px solid #7686f4;
+  padding-bottom: 10px;
+  width: 200px;
+  margin: 10px auto;
+}
+
+
+
+
+/* Deris */
+.card {
+  margin-left: 400px;
+}
+
