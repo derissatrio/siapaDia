@@ -128,3 +128,38 @@ Custom List
   margin-left: 400px;
 }
 
+
+
+/* css3 */
+.score th{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left:.50rem;
+  padding-right: .50rem;
+}
+
+/* body{
+  background-image: url("https://image.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg");
+  background-size: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+caption{
+  font-size: 20px;
+}
+
+.style3 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center top;
+  align-items: center;
+  flex-direction: column;
+}
+
+.style1 {
+  background-color: rgba(241, 229, 229, 0.349);
+  width: 25%;
+  border-radius: 10px;
+}
+
