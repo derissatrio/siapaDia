@@ -5,7 +5,7 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  background-image: url("/New\ Project\ \(11\).png");
+  background-image: url("./orang-bg.jpg");
   background-size: cover
 }
 
@@ -24,7 +24,7 @@ h3 {
 Container
 */
 .container {
-  max-width: 960px;
+  max-width: 60px;
   width: 100%;
   box-shadow: 5pt;
   margin: auto;
@@ -34,6 +34,42 @@ Container
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.container2 {
+  background-color: #ebebebb8;
+  opacity: 50;
+  background-position: center;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 270px;
+  
+  /* opacity: 0.8; */
+}
+
+.col-img, h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto
+}
+
+#id{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto
+}
+
+
 .box-container {
   background-color: #ebebebb8;
   opacity: 50;
@@ -41,6 +77,7 @@ Container
   padding: 40px;
   border-radius: 20px;
   margin: 270px;
+  
   /* opacity: 0.8; */
 }
 
@@ -60,7 +97,7 @@ Text Style
   text-align: center;
 }
 .title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
   font-kerning: initial;
   font-size: 64pt;
   margin-top: 20px;
@@ -72,10 +109,12 @@ Text Style
 }
 .answer-container {
   padding: 10px;
-  
+  position: relative;
 }
 
-.center {
+
+
+.vertical-center {
   margin: auto;
   width: 50%;
   padding: 10px;
