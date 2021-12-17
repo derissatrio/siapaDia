@@ -116,7 +116,7 @@ function random() {
     // console.log(pilihan, 'pilihan');
     const imgIndex = instructur[counter]
     let link = instructur[counter].img
-    const temp = `<img src="${link}" alt="..." style="width: 300px">`
+    const temp = `<img src="${link}" alt="..." style="width: 400px; filter: blur(5px)">`
     img.innerHTML = temp
     pilihan1.innerHTML = `<button id="0" onclick="pilihan(id)" data-bs-toggle="modal" type="button" class="btn btn-primary" data-bs-target="#exampleModal">${pilihan[0]}</button>
     `
