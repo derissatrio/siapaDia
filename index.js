@@ -141,6 +141,7 @@ function bekasMain() {
   console.log(history);
 
   const table = document.getElementById('tableHistory')
+  table.innerHTMl = ''
 
   if (!history.length) {
     table.innerHTML = `<div class="row text-center">
