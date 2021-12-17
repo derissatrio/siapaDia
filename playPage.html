@@ -46,7 +46,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <section id="login">
+    <!-- <section id="login" style="display: none;">
     <div class="container text-center">
       <div class="box-container">
         <h3 class="title">Siapa Dia</h3>
@@ -75,6 +75,31 @@
         </div>
       </div>
     </div>
+  </section> -->
+
+  <section id="login">
+    <div class="container text-center">
+      <div class="box-container">
+        <h3 class="title">Siapa Dia ?</h3>
+        <h4>Phase 0 Instructor in Hacktiv8</h4>
+        <p class="question" id="question-container"></p>
+
+        <div class="answer-container">
+          
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="">Username</span>
+              <input id="userName" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div>
+              <button onclick="mulai()" class="btn btn-primary" id="check-jawaban">Mari Mulai</button>
+              <button onclick="bekasMain()" class="btn btn-secondary" id="check-jawaban">History</button>
+            </div>
+          <div>
+            <ul class="custom-list" id="list-container">
+            </ul>
+          </div>
+      </div>
+    </div>
   </section>
 
     <section id="play" style="display: none;">
@@ -84,8 +109,8 @@
           <div id="img"></div>
         </div>
         <div class="col mt-">
-          <h3>Siapakah dia?</h3>
-          <p id="ciri"></p>
+          <h1>Siapakah dia?</h1>
+          <h3 id="ciri"></h3>
           <div class="row justify-content-end mt-2 fixed">
             <div class="col">
               <div id="pilihan1">
@@ -102,15 +127,14 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Siapa Dia</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                  <div class="modal-body">
+                  <div id="isiModal" class="modal-body">
                     Isi modal
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button onclick="random()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Next</button>
                   </div>
                 </div>
               </div>
@@ -126,19 +150,9 @@
 
           
           <div class="row justify-content-end mt-5 fixed">
-            <div style="margin-left: 200px;" class="col">
-              <div>
-                <button type="button" class="btn btn-success">Score</button>
-              </div>
-            </div>
             <div class="col">
               <div>
-                <button onclick="pilihan()" type="button" class="btn btn-danger">Hints</button>
-              </div>
-            </div>
-            <div style="margin-right: 20px;" class="col">
-              <div id="pilihan2" >
-                <button onclick="random()" type="button" class="btn btn-secondary">Next</button>
+                <button id="score" type="button" class="btn btn-success">Score</button>
               </div>
             </div>
           </div>
@@ -147,6 +161,51 @@
       </div>
 
     </div>
+  </section>
+
+  <section id="final" style="display: none;">
+
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h1 id="good">Good Job!</h1>
+          <h3 id="point" style="color: rgb(36, 34, 34);">Point 70/70</h3>
+          <h3 id="message" style="color: rgb(20, 20, 179);">Kamu berhak menjalani Live Code 4</h3>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col" style="margin-left: 420px;">
+          <button onclick="home()" type="button" class="btn btn-primary">Home</button>
+        </div>
+        <div class="col" style="margin-right: 300px;">
+          <button onclick="bekasMain()" type="button" class="btn btn-secondary">History</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="history" style="padding-left: 100px; padding-right: 100px; display: none;">
+    <div class="row text-center mt-5">
+      <div class="col">
+        <h1>History</h1>
+      </div>
+    </div>
+    <div class="container">
+      <table class="table">
+        <tbody id="tableHistory">
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="row fixed-bottom" style="margin-left: 600px; margin-bottom: 100px;">
+      <div class="col">
+        <button onclick="home()" type="button" class="btn btn-secondary">Home</button>
+      </div>
+    </div>
+
   </section>
 
     <!-- Javascript logic here -->
